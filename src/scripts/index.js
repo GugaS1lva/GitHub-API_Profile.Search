@@ -1,5 +1,10 @@
-// Fluxo para fazer a requisição quando o botão for pressionado (requisição já personalizada com o nome do usuário que deseja buscar)
-// Aqui deve ser informado o nome do usuário que deseja buscar
+import {user} from '../scripts/services/user.js'
+import {repositories} from '../scripts/services/repositories.js'
+import {activity} from '../scripts/services/activity.js'
+
+
+// Fluxo para fazer a requisição do usuário que deseja buscar (requisição personalizada com o nome do usuário que deseja buscar)
+// Aqui deve ser informado o nome do usuário que deseja
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
     getUserProfile(userName)
@@ -16,25 +21,8 @@ document.getElementById('input-search').addEventListener('keyup', (event) => {
     }
 })
 
-// Requisição persinalizada com o nome do usuário que deseja buscar
-async function user(userName){
-    const response = await fetch(`https://api.github.com/users/${userName}`)
-    return await response.json()
-}
-
-async function repos(userName){
-    const response = await fetch(`https://api.github.com/users/${userName}/repos?per_page=10`)
-    return await response.json()
-}
-
-async function activity(userName){
-    const response = await fetch(`https://api.github.com/users/${userName}/events?per_page=15`)
-    return await response.json()
-}
-
 // Buscando as informações do usuário e pondo na tela (html)
 function getUserProfile(userName){
-    
     user(userName).then(userData => {
         // console.log(userData)
         let userInfo = `
@@ -66,7 +54,7 @@ function getUserProfile(userName){
 }
 
 function getUserRepositories(userName){
-    repos(userName).then(reposData => {
+    repositories(userName).then(reposData => {
         // console.log(reposData)
         let repositoriesItems = ''
         reposData.forEach(repo => {
