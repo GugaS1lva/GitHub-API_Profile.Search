@@ -69,6 +69,10 @@ const screen = {
                 }
             }
         })
+    },
+
+    renderNotFound(){
+        this.userProfile.innerHTML = '<h3>[ERRO] Usuário não encontrado <i class="fa-solid fa-bug"></i></h3>'
     }
 }
 

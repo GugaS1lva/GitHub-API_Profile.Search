@@ -141,6 +141,11 @@ main {
   margin-bottom: -5px;
 }
 
+.fa-bug{
+  font-size: 1.3rem;
+  color: #15643c;
+}
+
 /* REPOSITORIES */
 
 .container .profile-data .repositories h2{
