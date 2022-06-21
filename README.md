@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 (OBS: ctrl + click ⬇️)
-- Live Site URL: [Click-me](https://gugas1lva.github.io/GugaTestes-012--Quest.JS.Avancado/)
+- Live Site URL: [Click-me](https://gugas1lva.github.io/GugaT-012--Quest.JS.Avancado/)
 
 ## My process
 
