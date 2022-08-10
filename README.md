@@ -12,15 +12,6 @@
 
 ## Overview
 
-### The module
-
-Users should be able to:
-
-- Use the search field to find github users
-- View the optimal layout depending on their device's screen size
-- View and interact with survey results
-- Be warned of any search or typing errors.
-
 ### Screenshot
 
 ![](src/images/preview.png)
