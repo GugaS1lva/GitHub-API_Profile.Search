@@ -19,7 +19,7 @@
 ### Links
 
 (OBS: ctrl + click ⬇️)
-- Live Site URL: [Click-me](https://gugas1lva.github.io/GugaT-012--Quest.JS.Avancado/)
+- Live Site URL: [Click-me](https://gugas1lva.github.io/GitHub-API_Profile.Search/)
 
 ## My process
 
